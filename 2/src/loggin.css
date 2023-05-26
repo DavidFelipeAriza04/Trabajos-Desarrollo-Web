@@ -39,6 +39,7 @@ input{
     display: block;
     margin-bottom: 10px;
     height: 40px;
+    padding: 5px;
 }
 
 .btn-log{
@@ -50,4 +51,13 @@ input{
     border-radius: 7px;
     color: aliceblue;
     background: linear-gradient(to right, darkblue,  blue);
+}
+
+#img-container{
+    display: flex;
+}
+
+img{
+    width: 80%;
+    margin: auto;
 }
