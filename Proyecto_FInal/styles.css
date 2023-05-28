@@ -1,0 +1,57 @@
+body{
+    width: 100vw;
+    background-color: rgb(240, 240, 240);
+    padding-top: 50px;
+    overflow-x: hidden;
+}
+.nav-bar{
+    width: 94%;
+    height: 35px;
+    /* border: solid 2px rgb(0,0,0); */
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+    background-color: rgb(224, 219, 210);
+    margin: -8px;
+    padding: 11px;
+    margin-top: -60px;
+}
+
+.logo{
+    width: 10%;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    position: absolute;
+    right: 86%;
+}
+
+.nav-bar__menu{
+    width: 10%;
+    cursor: pointer;
+}
+
+#about-us,#projects{
+    width: 94%;
+    height: 200px;
+    border: solid 2px;
+    margin: 20px 0px;
+    display: flex;
+}
+
+#about-us{
+    align-items: center;
+    justify-content: space-around;
+}
+
+#about-us img{
+    height: 50%;
+    width: 100px;
+}
+
+#about-us p{
+    width: 50%;
+    font-size: 15px;
+}
