@@ -1,0 +1,255 @@
+*{
+    font-family: 'Hanken Grotesk';
+}
+
+body{
+    display:flex;
+    height: 100vh;
+    justify-content: center;
+    user-select: none;
+}
+
+img{
+    width: 10%;
+    height: 100%;
+}
+
+h2{
+    color: hsl(0, 0%, 100%);
+}
+
+p{
+    padding: 0px 10px;
+}
+
+span{
+    color: hsl(241, 100%, 89%);
+    font-weight: 800;
+}
+
+    .contenedor-padre{
+        width: 470px;
+        height: 340px;
+        display: flex;
+        flex-wrap: wrap;
+        background-color: white;
+        align-self: center;
+        box-shadow: 2px 4px 30px 0 rgb(196, 196, 196);
+        border-radius: 20px;
+
+}
+
+    .contenedor-hijo1{
+        background: linear-gradient(hsl(252,100%,67%),hsl(241,81%,54%));
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+        width: 50%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+        justify-content: space-evenly;
+        box-sizing: border-box;
+        flex-direction: column;
+        color: hsl(241, 100%, 89%);
+        font-size: 18px;
+        min-width: 200px;
+    }
+        .encabezado{
+            padding: 20px 0px 0px 0px;
+            margin: 0px;
+        }
+        .circulo{
+            border-radius: 200px;
+            -webkit-border-radius: 200px;
+            -moz-border-radius: 200px;
+            -ms-border-radius: 200px;
+            -o-border-radius: 200px;
+            background: linear-gradient(hsl(256,75%,46%,1),hsl(241,72%,46%,0));
+            width: 135px;
+            height: 135px;
+            padding: 20px 0px;
+            margin-top: 20px;
+            font-weight: 800;
+            align-items: center;
+        }
+            #numero{
+                margin: 10px;
+                font-size: 40px;
+                color: hsl(0, 0%, 100%);
+            }
+
+            #mini{
+                font-size: 12px;
+            }
+        
+        #parrafo{
+            position: relative;
+            font-size: 12px;
+            margin: 0px 0px 0px 0px;
+            padding: 0px 0px 20px 0px;
+            width: 90%;
+        }
+
+    .contenedor-hijo2{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        text-align: left;
+        box-sizing: border-box;
+        padding: 10px;
+        min-width: 233px;
+}
+        .caja{
+            font-weight: 700;
+            font-size: 12px;
+            width: 80%;
+            height: 40px;
+            margin: 5px;
+            align-self: center;
+            border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            -ms-border-radius: 5px;
+            -o-border-radius: 5px;
+            display: flex;
+            padding: 0px 0px 0px 10px;
+            text-justify: distribute;
+            align-content: center;
+            transition: width 0.5s, height 0.5s;
+            -webkit-transition: width 0.5s, height 0.5s;
+            -moz-transition: width 0.5s, height 0.5s;
+            -ms-transition: width 0.5s, height 0.5s;
+            -o-transition: width 0.5s, height 0.5s;
+            }           
+            .caja:nth-child(n+2):hover{
+                width: 85%;
+                height: 45px;
+            }
+
+            .texto {
+                height: 25px;
+                font-size: 17px;
+                font-weight: 700;
+            }
+            
+            .rojo{
+                background-color: hsla(0, 100%, 67%,0.08);
+                color:  hsla(0, 100%, 67%);
+            }
+                #resaltado-R{
+                color: hsl(224, 30%, 27%);
+
+                padding: 0px 0px 0px 35px;
+                }
+
+            .amarillo{
+                background-color: hsla(39, 100%, 56%,0.08);
+                color: hsla(39, 100%, 56%)
+            }
+                #resaltado-M{
+                    color: hsl(224, 30%, 27%);
+
+                    padding: 0px 0px 0px 37px;
+                }
+            .verde{
+                display: flex;
+                flex-direction: row;
+                background-color: hsla(166, 100%, 37%, 0.08);
+                color: hsla(166, 100%, 37%);
+            }
+                #resaltado-Ve{
+                    color: hsl(224, 30%, 27%);
+
+                    padding: 0px 0px 0px 46px;
+                }
+            .azul{
+                background-color: hsla(234, 85%, 45%, 0.08);
+                color: hsla(234, 85%, 45%);
+            }
+                #resaltado-Vi{
+                    color: hsl(224, 30%, 27%);
+
+                    padding: 0px 0px 0px 49px;
+                }
+
+        .boton{
+            width: 190px;
+            height: 40px;
+            border: 1px solid;
+            box-sizing: border-box;
+            background-color: hsl(224, 30%, 27%);
+            color: white;
+            font-weight: 500;
+            margin: 255px 0px 0px 0px;
+            position: absolute;
+            align-self: center;
+            border-radius: 50px;
+            -webkit-border-radius: 50px;
+            -moz-border-radius: 50px;
+            -ms-border-radius: 50px;
+            -o-border-radius: 50px;
+            cursor: pointer;
+}
+            .boton:hover{
+                background: linear-gradient(hsl(252,100%,67%),hsl(241,81%,54%));
+}
+
+
+    .attribution {
+        font-size: 11px;
+        text-align: center;
+    }
+
+    .attribution a {
+        color: hsl(228, 45%, 44%);
+    }
+
+@media all and (max-width: 500px)  {
+    .contenedor-padre{
+        flex-direction: column;
+        height: 650px;
+        width: 220px;
+        
+    }
+
+    .contenedor-hijo1{
+        width: 100%;
+        height: 50%;
+    }
+
+    .contenedor-hijo2{
+        width: 100%;
+        height: 50%;
+    }
+
+        #resaltado-R{
+            color: hsl(224, 30%, 27%);
+            padding: 0px 0px 0px 24px;
+            }
+
+        #resaltado-M{
+            color: hsl(224, 30%, 27%);
+
+            padding: 0px 0px 0px 26px;
+        }
+
+        #resaltado-Ve{
+            color: hsl(224, 30%, 27%);
+
+            padding: 0px 0px 0px 36px;
+        }
+        #resaltado-Vi{
+            color: hsl(224, 30%, 27%);
+
+            padding: 0px 0px 0px 38px;
+        }
+}
+
