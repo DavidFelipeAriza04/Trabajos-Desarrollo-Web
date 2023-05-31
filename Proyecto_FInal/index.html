@@ -10,19 +10,45 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav class="nav-bar">
-        <img data-aos="zoom-in-right" src="Logo.png" alt="Logo" class="logo">
-        <img data-aos="zoom-in-left" class="nav-bar__menu" src="https://cdn-icons-png.flaticon.com/512/7216/7216128.png" alt="menu icon"></i>
+    
+    <nav id="nav-bar">
+        <img data-aos="zoom-in-right" src="images/Logo-removebg-preview.png" alt="Logo" class="logo">
+        <img data-aos="zoom-in-left" id="nav-bar__menu" src="https://cdn-icons-png.flaticon.com/512/7216/7216128.png" alt="menu icon"></i>
+        <a class="menu__link__pc" data-aos="zoom-in-left" href="#about-us__top">About us</a>
+        <a class="menu__link__pc" data-aos="zoom-in-left" href="#projects">Projects</a>
+        <a class="menu__link__pc" data-aos="zoom-in-left" href="#footer">Social Networks</a>
+        <div id="menu" class="hidden">
+            <a class="menu__link" href="#about-us__top">About us</a>
+            <a class="menu__link" href="#projects">Projects</a>
+            <a class="menu__link" href="#footer">Social Networks</a>
+        </div>
     </nav>
+    <hr id="about-us__top">
     <section id="about-us">
-        <img src="https://cdn-icons-png.flaticon.com/512/2118/2118701.png"" alt="about us icon">
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem, eaque. Rem culpa qui magni porro voluptatem nemo eos sunt cupiditate!</p>
+        <img src="https://cdn-icons-png.flaticon.com/512/2118/2118701.png" alt="about us icon">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos, velit voluptate. Unde quis temporibus quaerat voluptas? Velit modi voluptatum inventore explicabo ipsum fugit, aliquid itaque vel assumenda natus cumque necessitatibus!</p>
     </section>
     <section id="projects">
-        
+        <div class="project__card">
+            <img src="https://i.blogs.es/ceda9c/dalle/1366_2000.jpg" alt="img proyecto 1" class="project__card__image">
+            <p class="project__card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit et nam voluptatem odio ipsum magni ipsa totam quibusdam quidem voluptatum?</p>
+            <a href="." class="project__card__link">Ir al proyecto</a>
+        </div>
+        <div class="project__card">
+            <img src="https://i.blogs.es/ceda9c/dalle/1366_2000.jpg" alt="img proyecto 1" class="project__card__image">
+            <p class="project__card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit et nam voluptatem odio ipsum magni ipsa totam quibusdam quidem voluptatum?</p>
+            <a href="." class="project__card__link">Ir al proyecto</a>
+        </div>
+        <div class="project__card">
+            <img src="https://i.blogs.es/ceda9c/dalle/1366_2000.jpg" alt="img proyecto 1" class="project__card__image">
+            <p class="project__card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit et nam voluptatem odio ipsum magni ipsa totam quibusdam quidem voluptatum?</p>
+            <a href="." class="project__card__link">Ir al proyecto</a>
+        </div>
     </section>
-    <footer>
-
+    <footer id="footer">
+        <a href="#" class="footer__link" id="facebook"></a>
+        <a href="#" class="footer__link" id="twitter"></a>
+        <a href="#" class="footer__link" id="instagram"></a>
     </footer>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="index.js"></script>

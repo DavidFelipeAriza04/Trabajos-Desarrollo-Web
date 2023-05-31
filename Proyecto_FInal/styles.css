@@ -1,20 +1,36 @@
 body{
-    width: 100vw;
     background-color: rgb(240, 240, 240);
-    padding-top: 50px;
     overflow-x: hidden;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0;
+    margin-right: 0;
 }
-.nav-bar{
+
+p{
+    font-weight: 600;
+    font-size: 15px;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+#nav-bar{
     width: 94%;
     height: 35px;
-    /* border: solid 2px rgb(0,0,0); */
     position: fixed;
     display: flex;
     justify-content: flex-end;
     background-color: rgb(224, 219, 210);
-    margin: -8px;
-    padding: 11px;
-    margin-top: -60px;
+    padding: 12px;
+    top: 0px;
+    left: 0;
+    border-bottom: groove rgba(0, 0, 0, 0.3);
+    margin-right: 0px;
 }
 
 .logo{
@@ -26,32 +42,202 @@ body{
     -o-border-radius: 50%;
     position: absolute;
     right: 86%;
+    max-width: 40px;
 }
 
-.nav-bar__menu{
-    width: 10%;
+#nav-bar__menu{
+    width: 35px;
     cursor: pointer;
 }
 
 #about-us,#projects{
     width: 94%;
-    height: 200px;
-    border: solid 2px;
+    min-height: 200px;
     margin: 20px 0px;
     display: flex;
+    box-sizing: border-box;
 }
 
 #about-us{
     align-items: center;
+    border: solid 2px rgb(0, 0, 0);
     justify-content: space-around;
+    margin-top: 80px;
+    background-color: rgb(224, 219, 210);
+    border-radius: 5%;
+    -webkit-border-radius: 5%;
+    -moz-border-radius: 5%;
+    -ms-border-radius: 5%;
+    -o-border-radius: 5%;
 }
 
 #about-us img{
-    height: 50%;
     width: 100px;
 }
 
 #about-us p{
     width: 50%;
     font-size: 15px;
+}
+
+#projects{
+    flex-direction: column;
+    align-items: center;
+}
+
+.project__card{
+    width: 70%;
+    height: 350px;
+    border: solid 2px rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: rgb(224, 219, 210);
+    border-radius: 3%;
+    -webkit-border-radius: 3%;
+    -moz-border-radius: 3%;
+    -ms-border-radius: 3%;
+    -o-border-radius: 3%;
+    margin: 10px;
+}
+
+.project__card__image{
+    align-self: center;
+    min-height: 150px;
+    max-height: 200px;
+    margin-top: 10px;
+    border-radius: 5%;
+    -webkit-border-radius: 5%;
+    -moz-border-radius: 5%;
+    -ms-border-radius: 5%;
+    -o-border-radius: 5%;
+}
+
+.project__card__link{
+    border: solid 2px rgb(0, 0, 0);
+    width: 90px;
+    padding: 5px;
+    border-radius: 10%;
+    -webkit-border-radius: 10%;
+    -moz-border-radius: 10%;
+    -ms-border-radius: 10%;
+    -o-border-radius: 10%;
+    background-color: rgba(39, 158, 255, 0.918);
+}
+
+#footer{
+    border-top: dashed 2px rgba(0, 0, 0, 0.3);
+    width: 102%;
+    bottom: 0;
+    min-height: 100px;
+    max-height: 150px;
+    background-color: rgb(224, 219, 210);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer__link::before{
+    content: '';
+    height: 42px;
+    width: 42px;
+    display: block;
+    margin: 0px 20px;
+}
+
+#facebook::before{
+    background: url(images/facebook_42x42.png);
+}
+
+#twitter::before{
+    background: url(images/twitter_42x42.png);
+}
+
+#instagram::before{
+    background: url(images/instagram_42x42.png);
+}
+
+#menu{
+    position: absolute;
+    height: 150px;
+    width: 120%;
+    background-color: rgb(224, 219, 210);
+    border-bottom: groove rgba(0, 0, 0, 0.3);
+    border-top: groove rgba(0, 0, 0, 0.3);
+    top: 59px;
+    transition:height 1s;
+    -webkit-transition:height 1s;
+    -moz-transition:height 1s;
+    -ms-transition:height 1s;
+    -o-transition:height 1s;
+    right: 0 ;
+}
+
+.flex{
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    align-items: end;
+}
+
+#menu a{
+    margin: 25px 10px 0px 0px;
+}
+
+.hidden{
+    display: none;
+}
+
+@media all and (max-width:600px){
+    .menu__link__pc{
+        display: none;
+    }
+}
+
+@media all and (min-width: 600px) {
+    #nav-bar__menu{
+        display: none;
+    }
+
+    .menu__link__pc{
+        margin-right:20px;
+        align-self: center;
+    }
+
+    p{
+        font-weight: 600;
+        font-size: 20px;
+    }
+
+    #about-us p{
+        font-size: 20px;
+    }
+
+    #about-us img{
+        width: 180px;
+    }
+
+    .project__card{
+        height: 500px;
+        box-sizing: border-box;
+    }
+    .project__card__image{
+        min-height: 200px;
+        max-height: 290px;
+    }
+    #nav-bar{
+        width: 94%;
+    }
+}
+@media all and (min-width: 900px){
+    #projects{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .project__card{
+        max-width: 400px;
+    }
 }
