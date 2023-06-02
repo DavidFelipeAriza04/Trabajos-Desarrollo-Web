@@ -14,7 +14,6 @@ console.log(menu_links.length);
 
 for(let i=0;i<menu_links.length;i++){
     menu_links[i].addEventListener("click",()=>{
-        console.log("hola");
         menu.classList.toggle("hidden");
         menu.classList.toggle("flex");
     })
