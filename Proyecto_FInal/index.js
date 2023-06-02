@@ -9,9 +9,6 @@ menu_icon.addEventListener("click",()=>{
     menu.classList.toggle("flex");
 });
 
-console.log(menu_links)
-console.log(menu_links.length);
-
 for(let i=0;i<menu_links.length;i++){
     menu_links[i].addEventListener("click",()=>{
         menu.classList.toggle("hidden");
