@@ -26,7 +26,7 @@ a{
     display: flex;
     justify-content: flex-end;
     background-color: rgb(224, 219, 210);
-    padding: 12px;
+    padding: 12px 20px;
     top: 0px;
     left: 0;
     border-bottom: groove rgba(0, 0, 0, 0.3);
@@ -43,6 +43,7 @@ a{
     position: absolute;
     right: 86%;
     max-width: 40px;
+    margin-right: 8px;
 }
 
 #nav-bar__menu{
@@ -189,17 +190,29 @@ a{
     display: none;
 }
 
-@media all and (max-width:600px){
+@media all and (max-width:599px){
     .menu__link__pc{
         display: none;
     }
 }
 
 @media all and (min-width: 600px) {
+
+    .logo{
+        left: 20px;
+    }
+
     #nav-bar__menu{
         display: none;
     }
 
+    .menu__link{
+        margin-right: 5px;
+    }
+
+    #nav-bar{
+        padding: 12px 50px;
+    }
     .menu__link__pc{
         margin-right:20px;
         align-self: center;
@@ -237,7 +250,25 @@ a{
         justify-content: center;
     }
 
+    
+    #about-us{
+        height: 300px;
+        width: 70%;
+    }
+
+    #about-us p{
+        font-size: 25px;
+    }
+
+    #about-us img{
+        width: 180px;
+    }
+
     .project__card{
-        max-width: 400px;
+        max-width: 350px;
+    }
+
+    .project__card img{
+        max-width: 300px;
     }
 }
